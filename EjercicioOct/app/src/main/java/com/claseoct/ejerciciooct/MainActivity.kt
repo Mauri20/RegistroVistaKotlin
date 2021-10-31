@@ -137,9 +137,10 @@ class MainActivity : AppCompatActivity() {
             information.addAll(listOf(arrayOf(nombre,apellido,dept,munic,genero,telef)))
             tvRes.setText("")
             for(i in 0..information.size-1){
-                tvRes.append("Datos:"+information[i].get(0).toString()+" "+information[i].get(1).toString()+" "+
-                        information[i].get(3).toString()+" "+information[i].get(2).toString()+" "+information[i].get(4).toString()+" "+
-                        information[i].get(5).toString()+System.getProperty("line.separator"))
+                tvRes.append("Nombre: "+information[i].get(0).toString()+" "+information[i].get(1).toString()+
+                        " Departamento: "+information[i].get(2).toString()+" Municipio: "+information[i].get(3).toString()+
+                        " Género: "+information[i].get(4).toString()+" Teléfono: "+information[i].get(5).toString()+System.getProperty("line.separator")+
+                        "---------------------------------"+System.getProperty("line.separator"))
             }
             Toast.makeText(this,"Registro exitoso ", Toast.LENGTH_LONG).show()
             //Limpiando los campos
